@@ -1,0 +1,45 @@
+@import url(_mixins.css);
+.btn1 {
+  background-color: red;
+  border: 1px solid black; }
+  .btn1:hover:not(:disabled) {
+    box-shadow: 0 5px 15px greenyellow; }
+  .btn1:disabled {
+    color: grey;
+    opacity: 0.5; }
+
+body .container {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #F6FD0B; }
+
+body .texto1 {
+  color: #bbb; }
+
+body .texto2 {
+  color: #008; }
+
+body .btn {
+  padding: 20px; }
+  body .btn.btn-1 {
+    color: #4E0548; }
+  body .btn.btn-2 {
+    color: #E94D0C; }
+    body .btn.btn-2:hover {
+      background-color: #23DB0E; }
+    body .btn.btn-2:focus {
+      border-color: #EF0036; }
+
+body .lista {
+  display: inline-block;
+  border: 2px solid #1000B2; }
+  body .lista.tumami {
+    display: none; }
+  body .lista:hover .tumami {
+    display: block; }
+  body .lista.itemlista {
+    border-color: #E94D0C;
+    color: red; }
+    body .lista.itemlista:hover {
+      background-color: #23DB0E; }

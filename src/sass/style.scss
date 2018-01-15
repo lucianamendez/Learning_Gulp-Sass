@@ -1,0 +1,67 @@
+@import '_variables.scss';
+@import '_mixins.css';
+
+
+.btn1{
+	background-color:red;
+	border: 1px solid black;
+	&:hover:not(:disabled){
+		box-shadow:0 5px 15px greenyellow;
+	}
+	&:disabled{
+		color:grey;
+		opacity:0.5;
+	}
+}
+
+$grey: #bbb;
+body{
+	.container{
+		width:80%;
+		height: 500px;
+		margin: 0 auto;
+		background-color: $primary_color_yellow;
+	}
+	.texto1{
+		color: $grey;
+	}
+	.texto2{
+		$blue: #008; //var local
+		color:$blue;
+	}
+
+	.btn {
+		padding:20px;
+		&.btn-1{
+			color: $secondary_color_purple;
+		}
+		&.btn-2{
+			color:$secondary_color_orange;
+			&:hover{
+				background-color:$primary_color_green;
+			}
+			&:focus{
+				border-color:$secondary_color_red;
+			}
+		}
+	}
+	
+	.lista{
+		display:inline-block;
+		border:2px solid $primary_color_blue;
+		&.tumami{
+			display:none;
+		}
+		&:hover .tumami{
+			display:block;
+		}
+		&.itemlista{
+			border-color:$secondary_color_orange;
+			color:red;
+			&:hover{
+				background-color:$primary_color_green;
+			}
+		}
+	}
+}
+
